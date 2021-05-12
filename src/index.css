@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: sans-serif;
+  /* background: #12c2e9;  */
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inner {
+   width: 450px;
+  margin: auto;
+  /* background: #ffffff; */
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  /* padding: 40px 55px 45px 55px; */
+  /* border-radius: 15px; */
+  padding: 0px 15px 20px 15px;
+  transition: all .3s;
+}
+
+.outer .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.outer h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+.srv-validation-message {
+  display: block;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+  text-align: left;
+}
+
+.inner .heading-row {
+  background-color: #5A3F98;
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 10px;
+}
+
+.inner .heading {
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.inner .body-row {
+  padding-bottom: 10px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.clear-margin {
+  margin: 0;
+}
+
+.clear-padding {
+  padding-left: 0;
+}
+
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+table tr td a {
+  margin: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+th {
+  background-color: #009DDA;
+  color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #E3F4FB;
+}
+
+.center {
+  margin: 10px 0px 0px 15px;
+  width: 60%;
+  border: 1px solid transparent;
+  padding: 10px;
+  height: 125px;
+}
+
+.inner .login {
+ /*  width: 450px !important; */
+  margin: auto;
+  background: #ffffff;
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
